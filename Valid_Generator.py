@@ -103,7 +103,7 @@ def generate_valid_phone():
     ddd = random.choice(["11", "21", "31", "41", "51", "61", "71", "81", "91"])
 
     # Gere os próximos 8 dígitos aleatoriamente
-    numeros = [random.randint(0, 9) for _ in range(8)]
+    numeros = [random.randint(0, 9) for _ in range(9)]
 
     # Converta os números em uma string e insira os separadores
     numero_formatado = f"({ddd}){''.join(map(str, numeros[:4]))}-{''.join(map(str, numeros[4:]))}"
